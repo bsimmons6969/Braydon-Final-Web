@@ -1,0 +1,15 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #002855 !important;
+}
+
+h1, h3 {
+    color: #003366;
+}
+
+footer {
+    font-size: 0.9rem;
+}

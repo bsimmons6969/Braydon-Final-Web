@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motivation Web App</title>
+    <style>
+        body { text-align: center; font-family: Arial, sans-serif; margin-top: 50px; }
+        button { padding: 10px 20px; background-color: #00509e; color: white; border: none; cursor: pointer; font-size: 16px; }
+        p { font-size: 1.5rem; color: #333; }
+        nav a { margin: 0 15px; text-decoration: none; color: #00509e; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <!-- Navigation Links -->
+    <nav>
+        <a href="index.html">Resume</a> | 
+        <a href="scratch.html">Scratch Page</a>
+    </nav>
+
+    <!-- Web App Content -->
+    <h1>Motivation Generator</h1>
+    <p id="quote">Click the button to get motivated!</p>
+    <button onclick="generateQuote()">New Quote</button>
+
+    <script>
+        const quotes = [
+            "Believe in yourself!",
+            "Hard work beats talent when talent doesn't work hard.",
+            "Success is no accident.",
+            "Stay focused and never give up!",
+            "Dream it. Believe it. Achieve it."
+        ];
+        function generateQuote() {
+            const randomIndex = Math.floor(Math.random() * quotes.length);
+            document.getElementById('quote').innerText = quotes[randomIndex];
+        }
+    </script>
+</body>
+</html>

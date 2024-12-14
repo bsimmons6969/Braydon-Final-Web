@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Braydon's Scratch Page</title>
+    <link rel="stylesheet" href="custom2.css">
+    <style>
+        /* Set background color to light blue */
+        body {
+            background-color: #ADD8E6; /* Light blue */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: left; /* Align all text to the left */
+        }
+
+        /* Additional CSS for Paragliding Image */
+        .paragliding-photo {
+            position: absolute;
+            top: 196px; /* Adjusted vertical position (100px + 96px = 196px) */
+            left: 50%; /* Bring the image more towards the right */
+            transform: translateX(50%); /* Adjust horizontal position */
+            width: 250px; /* Set image size */
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Positioning the navigation links at the top right */
+        .top-links {
+            position: fixed;
+            top: 20px; /* Distance from the top */
+            right: 20px; /* Distance from the right edge */
+            display: flex;
+            gap: 15px; /* Space between the links */
+        }
+
+        .top-links a {
+            text-decoration: none;
+            color: #007BFF;
+        }
+
+        .top-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* Header style */
+        header h1 {
+            margin-top: 50px;
+        }
+
+        /* Footer style */
+        footer {
+            text-align: left; /* Align the footer text to the left */
+            margin-top: 20px;
+            padding-left: 20px; /* Add left padding to the footer */
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Right Links -->
+    <div class="top-links">
+        <a href="index.html">Return to Professional Page</a>
+        <a href="webapp.html">Go to Web App</a>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <h1>Welcome to My Scratch Page</h1>
+    </header>
+
+    <!-- Ordered & Unordered List -->
+    <section>
+        <h2>Hobbies & Interests</h2>
+        <ol>
+            <li>Playing and coaching volleyball</li>
+            <li>Traveling</li>
+            <li>Paragliding</li>
+        </ol>
+    </section>
+
+    <!-- YouTube Video -->
+    <section>
+        <h2>Inspiration Video</h2>
+        <iframe width="560" height="315" src="https://youtu.be/YScFpR_LIkA?si=fVnyysJRYai81VEN" allowfullscreen></iframe>
+    </section>
+
+    <!-- Tableau Visualization -->
+    <section>
+        <h2>Interactive Tableau Visualization</h2>
+        <div class="tableauPlaceholder" id="viz1734196712135" style="position: relative">
+            <noscript>
+                <a href="#">
+                    <img alt=" " src="https://public.tableau.com/static/images/UK/UKParaglidingXCLeague/Flightbrowser/1_rss.png" style="border: none" />
+                </a>
+            </noscript>
+            <object class="tableauViz" style="display:none;">
+                <param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F" />
+                <param name="embed_code_version" value="3" />
+                <param name="path" value="views/UKParaglidingXCLeague/Flightbrowser?:language=en-US&amp;:embed=true&amp;:sid=&amp;:redirect=auth" />
+                <param name="toolbar" value="yes" />
+                <param name="static_image" value="https://public.tableau.com/static/images/UK/UKParaglidingXCLeague/Flightbrowser/1.png" />
+                <param name="animate_transition" value="yes" />
+                <param name="display_static_image" value="yes" />
+                <param name="display_spinner" value="yes" />
+                <param name="display_overlay" value="yes" />
+                <param name="display_count" value="yes" />
+                <param name="language" value="en-US" />
+            </object>
+        </div>
+        <script type="text/javascript">
+            var divElement = document.getElementById('viz1734196712135');
+            var vizElement = divElement.getElementsByTagName('object')[0];
+            vizElement.style.minWidth = '1000px';
+            vizElement.style.maxWidth = '100%';
+            vizElement.style.minHeight = '750px';
+            vizElement.style.maxHeight = (divElement.offsetWidth * 0.75) + 'px';
+            var scriptElement = document.createElement('script');
+            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+            vizElement.parentNode.insertBefore(scriptElement, vizElement);
+        </script>
+    </section>    
+
+    <!-- Anchor -->
+    <p><a href="#top">Back to Top</a></p>
+
+    <!-- Paragliding Photo -->
+    <img 
+        class="paragliding-photo" 
+        src="Paragliding.jpg" 
+        alt="Paragliding in the sky with mountains">
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy;2024 Braydon Simmons</p>
+    </footer>
+</body>
+</html>
